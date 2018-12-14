@@ -1,0 +1,599 @@
+*{
+	margin:0px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+@font-face {
+font-family: "3";
+src: url("EPC-Bold.otf");
+url("EPC-Bold.otf") format("opentype"),}
+@font-face {
+font-family: "1";
+src: url("FN21-Regular.otf");
+url("FN21-Regular.otf") format("opentype"),
+}
+@font-face {
+font-family: "2";
+src: url("RM-Medium.ttf");
+}
+#top {
+	font-family:Tahoma, Geneva, sans-serif;	
+	float:right;
+	width: 100%;
+	height: 15px;
+	text-align:center;
+	position:absolute;
+	margin-top:87px;
+	z-index:1;
+}
+#top a{
+	text-decoration:none;
+}
+#top1{
+	float:right;
+	width:150px;
+}
+#top2{
+	float:right;
+	width:80px;
+	padding-right:15px;
+}
+#vip3{
+	padding-bottom:50px;
+	float:right;
+	width:150px;
+	color:white;
+}
+/*hai*/
+/* The side navigation menu */
+
+.sidenav {
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+	z-index:2;
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+#mySidenav h2 {
+    margin-left: 20px;
+}
+
+#mySidenav input {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-left: 25px;
+    width: 240px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+
+#mySidenav input:focus {
+    border: 2px solid rgb(14, 168, 60);
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/**/
+
+#free {
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    width: 100%;
+    height: 26px;
+    background-color: rgb(54, 53, 53);
+}
+
+#free .text {
+    float: left;
+    line-height: 26px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#free .nearest {
+    width: 20%;
+    background-color: rgb(222, 78, 16);
+    height: 26px;
+    float: right;
+    color: white;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+}
+
+#free .nearest:hover {
+    background-color: coral;
+}
+
+/**/
+
+#header {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: black;
+    height: 85px;
+    color: white;
+    opacity: 1;
+}
+
+#header .logo {
+    font-size: 50px;
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 42%;
+    
+}
+
+#header #menu {
+    margin: 10px;
+}
+
+#header ul {
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
+    top: 25px;
+    left: -40px;
+    margin: 0px;
+    width: 400px;
+    height: 50px;
+}
+
+#header #menu li {
+    float: left;
+    margin: 20px 10px;
+    list-style: none;
+    text-align: center;
+}
+
+#header #menu ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#header #menu li:hover {
+    border-bottom: 3px solid rgb(239, 75, 4);
+    box-sizing: border-box;
+}
+
+#header #search {
+    font-family: 'Julius Sans One', sans-serif;
+    border: 0px;
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    left: 88%;
+    background-color: rgb(54, 53, 53);
+    color: white;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    background-image: url(image/if_icon-111-search_314807.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#header #search span {
+    position: absolute;
+    left: 35px;
+    top: 0px;
+    font-size: 15px;
+}
+
+#header #search:hover {
+    background-color: rgb(222, 78, 16);
+}
+
+#header #cart {
+    font-family: 'Julius Sans One', sans-serif;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(image/cart-icon.png);
+    width: 120px;
+    height: 25px;
+    position: absolute;
+    bottom: 12px;
+    left: 75%;
+    cursor: pointer;
+}
+/**/
+#header #cart:hover{
+    animation: shake 0.5s; animation-iteration-count: infinite; 
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/**/
+/**/
+
+#free {
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    width: 100%;
+    height: 26px;
+    background-color: rgb(54, 53, 53);
+}
+
+#free .text {
+    float: left;
+    line-height: 26px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#free .nearest {
+    width: 20%;
+    background-color: rgb(222, 78, 16);
+    height: 26px;
+    float: right;
+    color: white;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+}
+
+#free .nearest:hover {
+    background-color: coral;
+}
+
+/**/
+.sidenav {
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+	z-index:5;
+}
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+#mySidenav h2 {
+	margin-top:0px;
+	padding-top:0px;
+    margin-left: 20px;
+}
+
+#mySidenav input {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-left: 25px;
+    width: 240px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid orange;
+}
+
+#mySidenav input:focus {
+    border: 2px solid rgb(14, 168, 60);
+}
+/**/
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/**/
+#body #column1 {
+    float: left;
+    width: 360px;
+    height: 800px;
+}
+
+.cate {
+	margin-left:90px;
+	text-align:center;
+	width:272px;
+	height:500px;
+	}
+.cate2 {
+	position:fixed;
+	top:100px;
+	margin-left:90px;
+	text-align:center;
+	width:272px;
+	height:500px;
+	}
+#body #column2 {
+    float: left;
+    width: 989px;
+    height: 1300px;
+    overflow: hidden;
+}
+
+#column2 #product {
+    width: 105%;
+    height: 1300px;
+    overflow: auto;
+}
+.hinhanh{
+	float:left;
+	height:200px;
+	width:100%;
+	background:url(image/page-title-bg.jpg);
+	background-position:center;
+	background-size:cover;
+	margin-bottom:20px;
+}
+.hinhanh1{
+	width:100%;
+	height:200px;
+	position:absolute;
+	background:rgba(0,0,0,0.5);
+}
+.title-inner {
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+	color:#FFFFFF;
+	font-family:"2";
+	font-size:18px;
+}
+
+.paging-title {
+    list-style-type: none;
+    margin: 11px 0 0;
+    padding: 0;
+	color:#FFF;
+}
+.paging-title a {
+    color: inherit;
+	text-decoration:none;
+	color:#DEDEDE;
+}
+.paging-title li {
+	display:inline-block;
+	text-decoration:none;
+}
+.show{
+	height:45px;
+	width:100%;
+	border-bottom:solid 1px #0000; 
+	padding-left:30px;
+	margin-right:30px;
+	font-family:"2";
+}
+/*thuy*/
+#signIn {
+	width: 35%;
+	height: 550px;
+	border: 1px solid black;
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+	box-sizing: border-box;
+	margin-top: 70px;
+}
+#account {
+	width: 35%;
+	height: 550px;
+	border: 1px solid black;
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+	box-sizing: border-box;
+	margin-top: 70px;
+}
+#headerx {
+	width: 80%;
+	height: 23%;
+	border-bottom: 1px solid #B4B4B4;
+	box-sizing: border-box;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#bodyx {
+	width: 70%;
+	height: 65%;
+	box-sizing: border-box;
+	margin-top: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+/* nut close*/
+#close {
+	font-size: 250%;
+	float: right;
+	margin-top: -8px;
+	margin-right: 7px;
+}
+#close:hover {
+	cursor: pointer;
+	color: red;
+}
+/* edit in header*/
+#headerx center {
+	font-size: 200%;
+	font-family: "Courier New", Courier, monospace;
+	padding-top: 60px;
+	color: #8F4747;
+}
+/*edit in body*/
+#email {
+	width: 100%;
+	height: 70px;
+	box-sizing: border-box
+}
+#pass {
+	width: 45%;
+	height: 70px;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 15px;
+}
+#pass22 {
+	width: 100%;
+	height: 70px;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 15px;
+}
+#confirm {
+	width: 45%;
+	height: 70px;
+	float: right;
+	box-sizing: border-box;
+	margin-top: 15px;
+	border: none;
+}
+#bodyx label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #606060;
+}
+#email input {
+	width: 100%;
+	height: 34px;
+}
+#pass input {
+	width: 100%;
+	height: 34px;
+}
+#pass22 input {
+	width: 100%;
+	height: 34px;
+}
+#confirm input {
+	width: 100%;
+	height: 34px;
+}
+input {
+	background-color: #EEEEEE;
+	margin-top: 10px;
+	border-top: #EEEEEE;
+	border-left: #EEEEEE;
+}
+#bodyx center {
+	margin-top: 110px;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	color: #9E9E9E;
+}
+#bodyx button {
+	width: 50%;
+	height: 40px;
+	margin-top: 35px;
+	margin-left: 25%;
+	margin-right: 25%;
+	border: none;
+	background-color: #CAB199;
+	color: white;
+	font-size: 12px;
+}
+#bodyx button:hover {
+	cursor: pointer;
+	background-color: #CAB1AE;
+}
+#to p {
+	font-size: 11px;
+	font-family: "Courier New", Courier, monospace;
+	font-style: italic;
+	color: #A6A6A6;
+	margin: 25px 0 0 7px;
+}
+#bodyx a {
+	text-decoration: none;
+	padding-left: 5px;
+}
+.error {
+	color: #F00;
+	font-size: 13px;
+	font-family:Tahoma, Geneva, sans-serif;
+}

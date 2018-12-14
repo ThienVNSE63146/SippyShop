@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SippyShop.Models.tblRegistration>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminView.cshtml";
+}
+
+<h2>Registration</h2>
+
+
+<table class="table">
+    @if (Model.Count()>0)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+
+            </th>
+            <th>  @Html.DisplayNameFor(model => model.password)</th>
+        </tr>
+
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+
+                </td>
+                <td>  @Html.DisplayFor(modelItem => item.password)</td>
+                <td>
+                    @Html.ActionLink("Acept", "Acept", new { id = item.email.Substring(0, item.email.IndexOf(".")) }) |
+
+                    @Html.ActionLink("Delete", "Delete", new { id = item.email.Substring(0, item.email.IndexOf(".")) })
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <h1><font color="blue">There is no registration</font></h1>
+    }
+
+</table>

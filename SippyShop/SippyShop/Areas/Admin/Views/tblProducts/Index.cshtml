@@ -1,0 +1,64 @@
+﻿@model IEnumerable<SippyShop.Models.tblProduct>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminView.cshtml";
+}
+
+<h2>Product</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.img)
+        </th>
+        <th>
+          Category
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sale)
+        </td>
+        <td>
+          <img src="@item.img" style="width:50px"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tblCategory.name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.productId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.productId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.productId })
+        </td>
+    </tr>
+}
+
+</table>

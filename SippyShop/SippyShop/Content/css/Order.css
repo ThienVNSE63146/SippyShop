@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin: 0;font-family:Arial, Helvetica, sans-serif}
+h2 { margin-left: 5%;margin-top: 0px;margin-bottom: 30px; font-family:"Courier New", Courier, monospace;}
+#d1{float:left;margin-left:70px;}
+#d1 table { margin: auto; }
+#x21 img {width: 70px; height: 70px;}
+#d1 td {text-align: center;}
+#d1 input[type='button']{width: 30px; height: 30px; background-color:#CCC; border-radius: 100%; border: none;}
+#d1 input[type='button']:hover {color: red; cursor:pointer;}
+
+#d1 button{ width: 20%; height: 50px;background-color:#FF8000; margin-left: 40%; border: none; text-align:center; color:#FFF;}
+/*banner*/
+#banner{ width: 100%; height: 175px;box-sizing:border-box; float:left; background-repeat:no-repeat; background-size:cover;margin-top:50px;
+}
+.pro{
+	width:845px;
+	border:solid 1px #DCDCDC;
+	border-radius:2px;
+	box-shadow:1px 1px 1px 0px #DCDCDC;
+}
+.pro tr {
+
+}
+.vip{
+	height:50px;
+}
+.vip th {
+	border-bottom:solid 1px #DCDCDC;
+	padding-left:5px;
+	font-weight:100;
+	font-size:14px;
+	
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+	color:#777777;
+}
+#z1{
+	text-align:left;
+	padding-left:15px;
+	font-size: 15px;
+	color: #FF8000;
+}
+#x1{
+	text-align:left;
+	padding-left:35px;
+	font-size: 15px;
+	color:#FF8000;
+}
+#x21{
+	width:100px;
+}
+#x22{
+	width:230px;
+	text-align:left;
+	padding-left:10px;
+}
+.sanpham th{
+	border-bottom:solid 1px  #DCDCDC;
+	font-weight:100;
+	line-height:25px;
+}
+#x25{
+	width:100px;
+}
+#x26{
+	width:60px;
+}
+.dathang{
+	height:70px;
+	background-color:#EEEEEE;
+}
+#hinhzz{
+	height:20px; width:20px; cursor:pointer;
+}
+#inputx{
+	padding-left:10px;width:340px;height:35px;
+	border-radius:3px;
+	border:solid 1px #DCDCDC;
+	box-shadow:1px 1px 0px 0px #F1F1F1;
+}
+.banner{
+	height:175px;
+	width:100%;
+	overflow:hidden;
+	padding-top:10px;
+	}
+#bannertrong{
+	width:400%;
+	height:100%;
+}
+#banner img {width: 100%; height: 175px;}

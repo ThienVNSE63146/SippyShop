@@ -1,0 +1,41 @@
+﻿@model  IEnumerable<SippyShop.Models.tblReciptDetail>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/AdminView.cshtml";
+}
+<h1 style="color:blue">@Model.FirstOrDefault().reciptId</h1>
+<table class="table">
+    <tr>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.tblProduct.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantity)
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.tblProduct.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.quantity)
+            </td>
+
+        </tr>
+    }
+    @Html.ActionLink("Back to List", "Index")
+</table>
+

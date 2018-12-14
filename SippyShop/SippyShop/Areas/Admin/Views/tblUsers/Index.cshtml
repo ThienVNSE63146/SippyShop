@@ -1,0 +1,64 @@
+﻿@model IEnumerable<SippyShop.Models.tblUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminView.cshtml";
+}
+
+<h2>Account</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.role)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.img)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.role)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneNum)
+        </td>
+        <td>
+         <img src="@item.img"/>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        <td>
+         <a href=" @Url.Action("Edit","tblUsers",new { id=item.email.Substring(0,item.email.IndexOf("."))})">Edit</a>|
+            @Html.ActionLink("Details", "Details", new { id=item.email.Substring(0, item.email.IndexOf(".")) }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.email.Substring(0, item.email.IndexOf(".")) })
+        </td>
+    </tr>
+}
+
+</table>
